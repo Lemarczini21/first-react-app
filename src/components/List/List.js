@@ -34,7 +34,6 @@ const List = () => {
       ],
     },
   ]);
-
   const addColumn = (newColumn) => {
     setColumns([
       ...columns,
@@ -46,16 +45,16 @@ const List = () => {
       },
     ]);
   };
-
   const addCard = (newCard, columnId) => {
     const columnsUpdated = columns.map((column) => {
       if (column.id === columnId)
         return {
           ...column,
-          card: [...column.cards, { id: shortid(), title: newCard.title }],
+          cards: [...column.cards, { id: shortid(), title: newCard.title }],
         };
       else return column;
     });
+
     setColumns(columnsUpdated);
   };
   return (
@@ -72,9 +71,11 @@ const List = () => {
         {columns.map((column) => (
           <Column
             key={column.id}
+            id={column.id}
             title={column.title}
             icon={column.icon}
             cards={column.cards}
+            addCard={addCard}
           />
         ))}
       </section>
