@@ -1,0 +1,29 @@
+[33mcommit 1e57ab10b5bffb795e804e1f55319b55e4e0de6e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Marcin Gwizdek <programowanie.kodilla@gmail.com>
+Date:   Sun Feb 12 15:03:11 2023 +0100
+
+    create store and initialState
+
+[33mcommit 4a06446736a2a4a3313763cbe7c95edb223326d8[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Marcin Gwizdek <programowanie.kodilla@gmail.com>
+Date:   Sat Feb 4 12:20:47 2023 +0100
+
+    pass action to CardForm
+
+[33mcommit 69c0a71e3fab540aa22c2c01509c075c31caaff6[m
+Author: Marcin Gwizdek <programowanie.kodilla@gmail.com>
+Date:   Mon Jan 30 15:13:35 2023 +0100
+
+    add func
+
+[33mcommit dc774617ac5bf25a5a7b9d78976c68a29dd9ca00[m
+Author: Marcin Gwizdek <programowanie.kodilla@gmail.com>
+Date:   Sat Jan 28 17:34:07 2023 +0100
+
+    fix misprint in components name
+
+[33mcommit 3a9b36cbf52bfa0e852a120f38b333b8ea41a601[m
+Author: Marcin Gwizdek <programowanie.kodilla@gmail.com>
+Date:   Sat Jan 28 17:28:32 2023 +0100
+
+    add container components
