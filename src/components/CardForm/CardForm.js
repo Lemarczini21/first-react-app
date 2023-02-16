@@ -10,12 +10,16 @@ const CardForm = (props) => {
   const [title, setTitle] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!title.trim()) {
+      setTitle('');
+      return;
+    }
     dispatch(addCard({ title, columnId: props.columnId }));
+    setTitle('');
     // dispatch({
     //   type: 'ADD_CARD',
     //   payload: { title, columnId: props.columnId },
     // });
-    setTitle('');
   };
 
   return (

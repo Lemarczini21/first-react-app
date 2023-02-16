@@ -1,0 +1,29 @@
+@import '../../styles/settings.scss';
+
+.nav {
+    background-color: darken($color-dark, 3%);
+    font-size: 24px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper span {
+    margin: auto 0;
+}
+
+.navList {
+    list-style-type: none;
+}
+
+.navList li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.navList li a {
+    color: white;
+    text-decoration: none;
+}
