@@ -28,6 +28,9 @@
 }
 
 .navList li a {
-    color: white;
     text-decoration: none;
+    color: white;
 }
+.navList .linkActive {
+    color: $color-warning;
+  }

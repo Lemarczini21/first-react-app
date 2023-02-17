@@ -1,4 +1,5 @@
 import styles from './NavBar.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -9,13 +10,34 @@ const NavBar = () => {
           <div>
             <ul className={styles.navList}>
               <li>
-                <a href='/'>Home</a>
+                <NavLink
+                  to='/'
+                  className={({ isActive }) =>
+                    isActive ? styles.linkActive : undefined
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a href='/favorite'>Favorite</a>
+                <NavLink
+                  to='/favorite'
+                  className={({ isActive }) =>
+                    isActive ? styles.linkActive : undefined
+                  }
+                >
+                  Favorite
+                </NavLink>
               </li>
               <li>
-                <a href='/about'>About</a>
+                <NavLink
+                  to='/about'
+                  className={({ isActive }) =>
+                    isActive ? styles.linkActive : undefined
+                  }
+                >
+                  About
+                </NavLink>
               </li>
             </ul>
           </div>
