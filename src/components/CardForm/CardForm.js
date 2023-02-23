@@ -16,10 +16,6 @@ const CardForm = (props) => {
     }
     dispatch(addCard({ title, columnId: props.columnId }));
     setTitle('');
-    // dispatch({
-    //   type: 'ADD_CARD',
-    //   payload: { title, columnId: props.columnId },
-    // });
   };
 
   return (
