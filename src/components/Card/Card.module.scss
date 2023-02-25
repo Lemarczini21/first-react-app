@@ -12,6 +12,11 @@
     font-weight: bold;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+}
 .isActive {
     color: red;
 }
